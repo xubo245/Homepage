@@ -1,0 +1,62 @@
+
+<!-- saved from url=(0041)http://me.fangunbaniubaobao.com/biao.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>JSChart</title>
+
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jscharts.js"></script>
+
+<style type="text/css">body #pie, body #pie * {background:none fixed transparent left top no-repeat;border:none;bottom:auto;clear:none;cursor:auto;direction:ltr;display:block;float:none;font-family:"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Arial,Helvetica,sans-serif;font-size:10px;font-size-adjust:none;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal;height:auto;layout-flow:horizontal;layout-grid:none;left:0px;letter-spacing:normal;line-break:normal;line-height:normal;list-style:disc outside none;margin:0px 0px 0px 0px;max-height:none;max-width:none;min-height:0px;min-width:0px;outline-color:invert;outline-style:none;outline-width:medium;overflow:visible;padding:0px;position:static;right:auto;text-align:left;text-decoration:none;text-indent:0px;text-shadow:none;text-transform:none;top:0px;vertical-align:baseline;visibility:visible;width:auto;word-spacing:normal;z-index:1;zoom:1;opacity:1;-webkit-animation: none;-moz-animation: none;-o-animation: none;-moz-box-shadow: none;-webkit-box-shadow: none;box-shadow: none;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;}</style><style type="text/css">body #line, body #line * {background:none fixed transparent left top no-repeat;border:none;bottom:auto;clear:none;cursor:auto;direction:ltr;display:block;float:none;font-family:"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Arial,Helvetica,sans-serif;font-size:10px;font-size-adjust:none;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal;height:auto;layout-flow:horizontal;layout-grid:none;left:0px;letter-spacing:normal;line-break:normal;line-height:normal;list-style:disc outside none;margin:0px 0px 0px 0px;max-height:none;max-width:none;min-height:0px;min-width:0px;outline-color:invert;outline-style:none;outline-width:medium;overflow:visible;padding:0px;position:static;right:auto;text-align:left;text-decoration:none;text-indent:0px;text-shadow:none;text-transform:none;top:0px;vertical-align:baseline;visibility:visible;width:auto;word-spacing:normal;z-index:1;zoom:1;opacity:1;-webkit-animation: none;-moz-animation: none;-o-animation: none;-moz-box-shadow: none;-webkit-box-shadow: none;box-shadow: none;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;}</style></head>
+<body style="zoom: 1; ">
+<div id="pie" style="float:left; width:460px; margin-left:-72px"><canvas id="JSChart_pie" width="460" height="321" style="width: 460px; height: 321px; position: relative; background-image: url(http://me.fangunbaniubaobao.com/chart_bg.jpg); background-position: initial initial; background-repeat: initial initial; "></canvas><map name="JSChart_pie" id="JSChart_pie"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="460" height="321" usemap="#JSChart_pie" style="border:0;position:absolute;left:-64px;top:8px;clip:&#39;rect(0, 460px, 321px, 0)&#39;;filter:alpha(opacity=0);z-index:10;"></map></div>
+<div id="line" style="float:left; width:460px"><canvas id="JSChart_line" width="434" height="321" style="width: 434px; height: 321px; position: relative; "></canvas><map name="JSChart_line" id="JSChart_line"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="434" height="321" usemap="#JSChart_line" style="border:0;position:absolute;left:396px;top:8px;clip:&#39;rect(0, 434px, 321px, 0)&#39;;filter:alpha(opacity=0);z-index:10;"></map></div>
+<script type="text/javascript">
+	var myData = new Array(['Web前端', 25], ['后端技术', 25], ['C/Shell编程', 50]);
+	var colors = ['#40bfee', '#f29439', '#e1452a'];
+	var myChart = new JSChart('pie', 'pie');
+	myChart.setDataArray(myData);
+	myChart.colorizePie(colors);
+	myChart.setTitle('图一：整体能力');
+	myChart.setTitleColor('#8E8E8E');
+	myChart.setTitleFontSize(11);
+	myChart.setTextPaddingTop(30);
+	myChart.setSize(460, 321);
+	myChart.setPiePosition(308, 170);
+	myChart.setPieRadius(85);
+	myChart.setPieUnitsColor('#555');
+	myChart.setBackgroundImage('chart_bg.jpg');
+	myChart.draw();
+	
+	
+	var myData = new Array(['C', 90],['Linux Shell',85],['Html+Css', 80],['数据库技术',75],['算法',65], ['PHP', 60],['Solidworks',50],['Photoshop',45]);
+	var colors = ['#40bfee', '#e1452a', '#f29439', '#81C714','#46C7F4', '#ef613b', '#FCD200', '#93C5EA'];
+	var myChart = new JSChart('line', 'bar');
+	myChart.setDataArray(myData);
+	myChart.colorizeBars(colors);
+	myChart.setTitle('图二：代码编写能力');
+	myChart.setTitleColor('#8E8E8E');
+	myChart.setAxisNameX('');
+	myChart.setAxisNameY('');
+	myChart.setAxisNameFontSize(16);
+	myChart.setAxisNameColor('#999');
+	myChart.setAxisValuesAngle(50);
+	myChart.setAxisValuesColor('#777');
+	myChart.setAxisColor('#B5B5B5');
+	myChart.setAxisPaddingTop(60);
+	myChart.setAxisPaddingBottom(60);
+	myChart.setAxisPaddingLeft(45);
+	myChart.setTitleFontSize(11);
+	myChart.setBarBorderWidth(0);
+	myChart.setBarSpacingRatio(50);
+	myChart.setBarOpacity(1);
+	myChart.setSize(434, 321);
+	myChart.setGridColor('#C6C6C6');
+	myChart.draw();
+
+	
+</script>
+
+	
+
+</body></html>
