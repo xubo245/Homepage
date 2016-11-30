@@ -13,8 +13,9 @@ Homepage是一个个人主页的模版,使用的是静态网页技术，可以�
 ## 2.1 环境搭建
 ###下载
 直接下载zip包或者
-    
-    git clone https://github.com/xubo245/Homepage.git
+
+
+        git clone https://github.com/xubo245/Homepage.git
 
 ### 上传至服务器：
 （1）中科大的学生每人有300M免费的服务器，使用方法请参考[http://home.ustc.edu.cn](http://home.ustc.edu.cn/help/)
